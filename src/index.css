@@ -1,0 +1,29 @@
+html,
+body,
+#root,
+#root-canvas {
+  min-height: 1px;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  overflow: hidden;
+}
+
+.hui {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  min-width: 200px;
+  height: 200px;
+  /* max-height: 200px; */
+  padding: 1.5rem;
+  border-top-right-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 1.25rem;
+  transition: bottom 0.3s ease;
+}
+
+.hui.hidden {
+  bottom: calc(-200px - 3rem);
+}

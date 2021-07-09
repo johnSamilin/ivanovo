@@ -1,0 +1,11 @@
+Model Information:
+* title:	satellite_high_details
+* source:	https://sketchfab.com/3d-models/satellite-high-details-8b91f5f7086e46c7b090a5dec8f3f94f
+* author:	low_dencity (https://sketchfab.com/low_dencity)
+
+Model License:
+* license type:	CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions must have the same license.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "satellite_high_details" (https://sketchfab.com/3d-models/satellite-high-details-8b91f5f7086e46c7b090a5dec8f3f94f) by low_dencity (https://sketchfab.com/low_dencity) licensed under CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
