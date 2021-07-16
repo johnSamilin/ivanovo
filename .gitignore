@@ -1,0 +1,11 @@
+node_modules
+yarn.lock
+yarn-error.log
+dist
+.parcel-cache
+.cache
+
+assets/animations
+assets/models/weapons
+assets/models/map/scheme*
+assets/models/map/satellite_medium*

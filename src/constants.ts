@@ -1,4 +1,4 @@
-export enum SELECTABLE {
+export enum SELECTABLES {
     BUILDING = 'building',
     UNIT = 'unit',
 }
@@ -15,6 +15,11 @@ export enum GOODS {
     WOOD = 'Дерево',
     APPLES = 'Яблоки',
     HONEY = 'Мёд',
+}
+
+export enum RESOURCES {
+    RAW_WOOD = 'Бревна',
+    BOARDS = 'Доски',
 }
 
 export const MAX_UNITS_COUNT = 200;

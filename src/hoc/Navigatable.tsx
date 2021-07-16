@@ -1,13 +1,13 @@
 import { Vector3 } from '@babylonjs/core';
 import React, { useEffect, useRef } from 'react';
-import { unitsStore } from '../store/units';
+import { navigationStore } from '../store/navigation';
 
 export const Navigatable = ({
     id,
     position = new Vector3(0, 0, 0),
     children,
 }) => {
-    const add = unitsStore(state => state.add);
+    const add = navigationStore(state => state.add);
     const ref = useRef();
 
     useEffect(() => {

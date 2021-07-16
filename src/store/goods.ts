@@ -3,7 +3,7 @@ import { GOODS } from '../constants';
 
 export const goodsStore = create((set) => ({
     goods: {
-        [GOODS.WOOD]: 0,
+        [GOODS.WOOD]: 1,
         [GOODS.APPLES]: 0,
         [GOODS.HONEY]: 0,
     },

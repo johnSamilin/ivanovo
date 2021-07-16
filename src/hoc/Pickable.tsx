@@ -11,12 +11,13 @@ interface PickableProps {
     onPick?: () => void;
     bbox?: BoundingBox;
     children: any;
+    active?: boolean;
 }
 
 const defaultBbox = new BoundingBox(Vector3.Zero(), Vector3.Zero());
 
 export const Pickable = (props: PickableProps) => {
-    const { id, type, subtype, onPick = () => { }, bbox = defaultBbox, children } = props;
+    const { id, type, subtype, onPick = () => { }, bbox = defaultBbox, children, active = true } = props;
 
     const [meshRef, setMeshRef] = useState<Nullable<Mesh>>();
     const [isHovered, setIsHovered] = useState(false);
@@ -27,7 +28,10 @@ export const Pickable = (props: PickableProps) => {
     // выбор
     // selecting
     useClick((e: ActionEvent) => {
-        select(id, type, subtype);
+        if (active) {
+            select(id, type, subtype);
+            onPick(id, type, subtype);
+        }
     }, { current: meshRef });
 
     useHover(() => setIsHovered(true), () => setIsHovered(false), { current: meshRef });

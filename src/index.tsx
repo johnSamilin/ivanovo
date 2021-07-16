@@ -11,6 +11,7 @@ import { Ground } from './Ground';
 import { HUI } from './ui/HUI';
 import { Camera } from './Camera';
 import { BUILDINGS } from './constants';
+import { Peasant } from './Peasant';
 
 
 function Game() {
@@ -57,9 +58,8 @@ function Game() {
             position={new Vector3(6, 4.1, 6)}
             scale={6}
           />
-
-          <NPC id="peasant-1" model="soldier" position={new Vector3(-6, 4.1, -6)} scale={2} />
-
+          
+          <Peasant id="1" position={new Vector3(6, 4.1, 6)} />
           <Camera />
         </Scene>
       </Engine>

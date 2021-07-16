@@ -7,7 +7,7 @@ import useInterval from './helpers/useInterval';
 import { buildingsStore } from './store/buildings';
 import { calculateBoundingInfo } from './helpers/calculateBoundingInfo';
 import { uiStore } from './store/ui';
-import { SELECTABLE } from './constants';
+import { SELECTABLES } from './constants';
 import { Pickable } from './hoc/Pickable';
 
 export function Building({
@@ -112,7 +112,7 @@ export function Building({
                 </adtFullscreenUi>
                 <Pickable
                     id={id}
-                    type={SELECTABLE.BUILDING}
+                    type={SELECTABLES.BUILDING}
                     subtype={subtype}
                     bbox={bbox?.boundingBox}
                 >

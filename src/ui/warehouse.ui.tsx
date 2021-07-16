@@ -9,7 +9,7 @@ export const WarehouseUI = () => {
             <strong>Склад</strong>
             <h4>Товары:</h4>
             {Object.entries(goods).map(([item, quantity]) => (
-                <div>
+                <div key={item}>
                     {item}: {quantity} шт.
                 </div>
             ))}
